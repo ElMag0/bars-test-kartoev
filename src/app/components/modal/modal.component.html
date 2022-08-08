@@ -1,0 +1,64 @@
+<form class="dialog-modal-form">
+    <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input
+            matInput
+            placeholder="Type a new name"
+            type="text"
+            [(ngModel)]="name"
+            name="name"
+        />
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Username</mat-label>
+        <input
+            matInput
+            placeholder="Type a new username"
+            type="text"
+            [(ngModel)]="username"
+            name="username"
+        />
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input
+            matInput
+            placeholder="Type a new email"
+            type="email"
+            [(ngModel)]="email"
+            name="email"
+        />
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Phone</mat-label>
+        <input
+            matInput
+            placeholder="Type a new phone"
+            type="text"
+            [(ngModel)]="phone"
+            name="phone"
+        />
+    </mat-form-field>
+    <div>
+        <button
+            mat-stroked-button
+            color="primary"
+            (click)="saveUserData()"
+            type="button"
+        >
+            Save
+        </button>
+        <button
+            mat-stroked-button
+            color="warn"
+            class="cancel-btn"
+            (click)="closeDialog()"
+            type="button"
+        >
+            Cancel
+        </button>
+    </div>
+</form>
